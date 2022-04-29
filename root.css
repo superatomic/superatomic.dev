@@ -1,0 +1,65 @@
+/*
+    superatomic.dev Website
+    Copyright (C) 2022  Ethan Kinnear
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+/* Import all fonts that we want to use */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+:root {
+    --background: #3a5683;
+    --background-gradient: linear-gradient(-45deg, #639a88, var(--background), #2708a0);
+    --text-color: white;
+    --bold-color: #51cb20;
+    --link-color: #639a88;
+    
+    --button-social: #51cb20;
+    --button-webpage: #9b21cc;
+    --button-em: #cb2051;
+    --button-default: #777788;
+    --button-end: #0002;
+}
+
+html {
+    color: var(--text-color);
+    font-family: 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    background: var(--background-gradient);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    min-height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+code {
+    font-family: 'Jetbrains Mono', 'Courier New', Courier, monospace;
+}
+

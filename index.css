@@ -1,0 +1,158 @@
+/*
+    superatomic.dev Website
+    Copyright (C) 2022  Ethan Kinnear
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+
+html {
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    margin: 0px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 812px;
+    padding: 0;
+    margin-bottom: 12px;
+}
+
+main::before {
+    content: "";
+    min-height: calc(30vmin - 5vh);
+}
+
+main::after {
+    content: "";
+    max-height: calc(50vh);
+}
+
+#profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#profile > * {
+    padding: 0 1em;
+}
+
+#profile img {
+    width: 128px;
+    height: 128px;
+    clip-path: circle(64px);
+}
+
+#bio {
+    min-width: 256px;
+    max-width: 512px;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    display: flex;
+}
+
+.title .greeting {
+    text-align: left;
+}
+
+.name {
+    font-weight: bold;
+    color: var(--bold-color);
+}
+
+.name:hover {
+    text-shadow: 0 0 0.15em var(--bold-color);
+}
+
+.title .emote {
+    text-align: right;
+    margin-left: auto;
+    display: inline-block;
+}
+
+#links {
+    list-style: none;
+}
+
+#links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-block: 0;
+    margin-inline: 0;
+    padding-inline: 0;
+}
+
+.button {
+    --button-color: var(--button-default);
+    font-size: 14px;
+    height: fit-content;
+    padding: 1em;
+    border-radius: 1em;
+    margin: 0.5em 0.75em;
+    white-space: nowrap;
+    background-color: var(--bold-color);
+    transition: background-position 1s ease-in 0.5s;
+    background: linear-gradient(90deg, var(--button-end) 2em, var(--button-color) 100%);
+    transform: scale(1.0);
+    transition: transform 0.5s ease-out;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.button.button-social {
+    --button-color: var(--button-social);
+}
+
+.button.button-webpage {
+    --button-color: var(--button-webpage);
+}
+
+.button.button-em {
+    --button-color: var(--button-em);
+}
+
+.button li.fa::before {
+    padding-right: 0.5em;
+    font-size: 1.25em;
+    font-family: ForkAwesome;
+}
+
+.button li.fa {
+    font-family: 'Jetbrains Mono', monospace;
+}
+
+.button li {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+/* 51cb20,76b041,639a88,3a5683,2708a0 */
