@@ -100,7 +100,7 @@ main::after {
     list-style: none;
 }
 
-#links {
+.links {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
